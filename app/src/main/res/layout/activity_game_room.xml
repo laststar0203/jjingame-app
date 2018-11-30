@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GameRoomActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="invisible"
+    tools:visibility="visible"
+    android:id="@+id/gameLayout"
+    >
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="점수 : 2"
+        android:text=""
+        android:textSize="30dp"
+
+        />
+    <ProgressBar
+        android:id="@+id/progreesBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_marginVertical="10dp"
+        android:max="15"
+        android:indeterminateOnly="false"
+        />
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        tools:text="2초"
+        android:layout_marginTop="10dp"
+        android:textSize="70dp" />
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        tools:text="단어"
+        android:layout_marginTop="30dp"
+        android:textSize="39dp" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="텍스크를 입력하시오"
+        android:background="#0000"
+        android:layout_marginTop="50dp"
+        android:singleLine="true"
+        android:lines="1"
+        />
+
+</LinearLayout>
+ <TextView
+     android:id="@+id/countDownText"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerInParent="true"
+     android:text="3"
+     android:textSize="60dp"
+     />
+</RelativeLayout>
